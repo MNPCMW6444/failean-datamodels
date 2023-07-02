@@ -1,7 +1,4 @@
 import mongoose, { Schema, Document } from "mongoose";
-import { WhiteModels } from "@failean/shared-types";
-
-type WhiteCritiq = WhiteModels.Data.Critiq.WhiteCritiq;
 
 interface Answer {
   question: string;
@@ -15,7 +12,7 @@ interface Step {
   answers: Answer[];
 }
 
-interface CritiqDocument extends Document, WhiteCritiq {
+interface CritiqDocument extends Document {
   steps: Step[];
 }
 
@@ -39,9 +36,9 @@ const stepSchema = new mongoose.Schema<Step>(
 
 const critiqModel = new mongoose.Schema<CritiqDocument>(
   {
-    owner: { type: Schema.Types.ObjectId, required: true },
+    //  owner: { type: Schema.Types.ObjectId, required: true },
     steps: [stepSchema],
-    archived: { type: Boolean, default: false },
+    // archived: { type: Boolean, default: false },
   },
   {
     timestamps: true,

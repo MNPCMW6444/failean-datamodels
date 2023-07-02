@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import { WhiteModels } from "@failean/shared-types";
-type WhitePromptResult = WhiteModels.Data.Prompts.WhitePromptResult;
 
 const promptResultModel = new mongoose.Schema(
   {

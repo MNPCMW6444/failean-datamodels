@@ -1,8 +1,6 @@
-import mongoose, { Schema } from "mongoose";
-import { WhiteModels } from "@failean/shared-types";
-type WhiteUser = WhiteModels.Auth.WhiteUser;
+import { Schema } from "mongoose";
 
-const UserModel = new Schema(
+const userModel = new Schema(
   {
     email: {
       type: String,
@@ -25,4 +23,4 @@ const UserModel = new Schema(
   }
 );
 
-export default UserModel;
+export default userModel;

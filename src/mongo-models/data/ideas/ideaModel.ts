@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import { WhiteModels } from "@failean/shared-types";
-type WhiteIdea = WhiteModels.Data.Ideas.WhiteIdea;
 
 const ideaModel = new mongoose.Schema(
   {
