@@ -4,10 +4,6 @@
   "description": "mongo models for servers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "restricted"
-  },
   "scripts": {
     "prebuild": "npm run version:patch",
     "version:patch": "npm version patch --no-git-tag-version",
