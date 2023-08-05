@@ -1,6 +1,6 @@
 {
   "name": "@failean/mongo-models",
-  "version": "1.6.121",
+  "version": "1.6.122",
   "description": "mongo models for servers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
