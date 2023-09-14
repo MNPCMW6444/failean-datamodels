@@ -1,6 +1,7 @@
 import mongoose, { Schema, Document } from "mongoose";
 
 interface Answer {
+ 
   question: string;
   selectedOption: string;
   failingScore: number;
@@ -39,6 +40,7 @@ const critiqModel = new mongoose.Schema<CritiqDocument>(
     //  owner: { type: Schema.Types.ObjectId, required: true },
     steps: [stepSchema],
     // archived: { type: Boolean, default: false },
+    //achi????
   },
   {
     timestamps: true,
