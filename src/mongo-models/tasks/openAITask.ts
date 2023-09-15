@@ -6,7 +6,8 @@ const openAITask = new mongoose.Schema(
         finishTime: {type: Date, required: false},
         status: {type: String, required: true},
         promptResIDOrReason: {type: String, required: false},
-        userID:{type:String, required:true}
+        userID:{type:String, required:true},
+        promptName:{type:String, required:true}
     },
     {
         timestamps: true,

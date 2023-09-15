@@ -1,6 +1,6 @@
 {
   "name": "@failean/mongo-models",
-  "version": "1.6.128",
+  "version": "1.6.129",
   "description": "mongo models for servers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/failean/mongo-models#readme",
   "dependencies": {
-    "mongoose": "^7.5.1",
+    "mongoose": "^7.5.2",
     "typescript": "^5.2.2"
   }
 }
